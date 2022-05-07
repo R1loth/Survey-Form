@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>FCC: Survey form</title>
+</head>
+<body>
+    <main>
+    <h1 id="title">Diet form</h1>
+    <p id="description">Fill out this form to get your free personalized meal plan</p>
+    <form id="survey-form">
+
+        <div class="customer_info">
+            <div class="contact">
+        <label id="name-label" for="name"><span class="customer_info">Name:</span>
+            <input id="name" type="text" 
+            required
+            placeholder="Enter your name">
+        </label>
+        <label id="email-label" for="email"><span class="customer_info">Email:</span>
+            <input id="email" type="text" 
+            required
+            placeholder="Enter your email"
+            required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        </label>
+        <label id="number-label" for="number"><span class="customer_info">Phone number:</span>
+            <input id="number" type="tel" 
+            required
+            placeholder="Enter your phone number"
+            required pattern="[0-9]{9}">
+        </label>
+            </div>
+            <div class="stats">
+        <label for="female"><span class="gender_female">Female</span>
+            <input id="female" type="radio" name="gender" checked>
+        </label>
+        <label for="male"><span class="gender_male_span">Male</span>
+            <input id="male" type="radio" name="gender">
+        </label>
+        <label for="height"><span class="height_span">Your height:</span>
+            <input id="height" type="number" placeholder="cm" required min="40" max="240">
+        </label>
+        <label for="weight">Your weight:
+            <input id="weight" type="number" placeholder="kg" required min="30" max="250">
+        </label>
+        </div>
+        </div>
+
+        
+
+
+
+
+
+
+
+
+        <select required name="weight program" id="dropdown" >
+            <option selected disabled>Choose your weight program</option>
+            <option value="lose weight">lose weight</option>
+            <option value="gain weight">gain weight</option>
+            <option value="maintain weight">maintain exact weight</option>
+        </select>
+
+        <span class="label-heading">Have you ever been on specific diet?</span><label for="never_tried">
+            <input id="never_tried" type="checkbox" value="" checked>No, I have'nt tried specific diet yet
+        </label>
+        <label for="low_carb">
+            <input id="low_carb" type="checkbox" value="">Low-carb (protein-rich, ketogenic diets)
+        </label>
+        <label for="low_fat">
+            <input id="low_fat" type="checkbox" value="">Low-fat
+        </label>
+        <label for="portion_reduction">
+            <input id="portion_reduction" type="checkbox" value="">Portion reduction (quantity, calorie diets)
+        </label>
+        <label for="formula_diet">
+            <input id="formula_diet" type="checkbox" value="">Formula diet (powders, drinks)
+        </label>
+        <label for="zero_diet">
+            <input id="zero_diet" type="checkbox" value="">Zero diet (fasting, day fasting, meal skipping)
+        </label>
+
+        
+       <span class="label-heading">Would you prefer meal plan of any of your previous diet?</span>
+       <div class="yesno"><label for="something5">
+            <span>Yes</span>
+        
+            <input id="something5" type="radio" name="preferences">
+        </label>
+        <label  for="something6">
+            <span>No</span>
+            <input id="something6" type="radio" name="preferences" checked>
+        </label>
+        </div>
+
+        <div class="text-areaa">
+        <label for="text-area">
+            <textarea name="questions" id="text-area" cols="30" rows="10"
+            placeholder="If you prefer any of your previous diet and also if you have any health conditions which may need specific type of diet please let us know which one"></textarea>
+        </label>
+        </div>
+
+        <label for="submit">
+            <input id="submit" type="submit" value="Submit">
+        </label>
+    </form>
+    </main>
+
+<!--label for = input id-->
+    
+</body>
+</html>

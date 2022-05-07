@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    background-color: navy;
+    
+}
+
+main {
+    background-color: beige;
+    min-width: 200px;
+    border-radius: 5px;
+    
+    max-height: auto;
+
+}
+
+#title {
+    text-align: center;
+    font-weight: 700;
+    
+    padding-top: 3em;
+}
+
+#description {
+    text-align: center;
+    font-weight: 600;
+    
+}
+
+#survey-form {
+    display: flex;
+    flex-direction: column;
+    
+
+    padding: 0 20px 20px 20px;
+    
+}
+
+.customer_info {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+    
+}
+
+.gender_male_span {
+    padding-right: 14.5px
+}
+
+#height,
+#weight {
+    margin: 2.5px;
+    width: 50px;
+    text-align: right;
+}
+
+#height {
+    margin-left: 2.2px;
+}
+
+.height_span {
+    padding-right: 4px;
+}
+
+#dropdown {
+    width:210px;
+    margin: 15px 0 15px 0;
+    align-self: center;
+}
+
+.label-heading {
+    text-align: center;
+    border-bottom: 2px solid black;
+    border-top: 2px solid black;;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+
+input[type='checkbox'] {
+    margin: 7px 5px 7px 0;
+}
+
+
+.yesno {
+    text-align: center;
+    padding: 5px 0 5px 0;
+}
+
+textarea {
+    max-width: 360px;
+    max-height: 200px;
+    
+}
+
+.text-areaa {
+    text-align: center;
+}
+
+label[for="submit"] {
+    padding-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input {
+    text-align: center;
+}
+
+@media only screen and (max-width: 390px) {
+
+    .customer_info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5px;
+    }
+    .stats {
+        padding-top: 15px;
+    }
+
+    #title {
+        padding-top: 250px;
+    }
+
+}
