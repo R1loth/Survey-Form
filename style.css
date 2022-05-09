@@ -16,21 +16,23 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   background-color: navy;
 }
 
 main {
+  margin-top: 100px;
+  margin-bottom: 100px;
   background-color: beige;
   min-width: 200px;
   border-radius: 5px;
-  max-height: auto;
+  height: auto;
 }
 
 #title {
   text-align: center;
   font-weight: 700;
-  padding-top: 3em;
 }
 
 #description {
@@ -163,9 +165,6 @@ input {
   }
   .stats {
     padding-top: 15px;
-  }
-  #title {
-    padding-top: 250px;
   }
 }
 /*# sourceMappingURL=style.css.map */
